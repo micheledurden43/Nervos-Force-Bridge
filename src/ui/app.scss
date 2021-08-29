@@ -1,0 +1,51 @@
+body {
+    padding: 20px;
+}
+
+.rotating-icon {
+    display: inline-block;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes twist-up {
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+button {
+    padding: 0.7rem;
+    background-color: rgb(6, 193, 240);
+    color: rgb(32, 32, 32);
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.like {
+    &:hover {
+        padding: 0.8rem;
+        border-radius: 4px;
+        background-color: rgba(206, 206, 206, 0.863);
+        cursor: pointer;
+    }
+}
+
+input {
+    padding: 0.7rem;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+.main {
+    margin-right: 25vw;
+    margin-left: 25vw;
+}
